@@ -719,7 +719,7 @@ struct cgroup_subsys schedtune_cgrp_subsys = {
 	.can_attach     = schedtune_can_attach,
 	.cancel_attach  = schedtune_cancel_attach,
 	.legacy_cftypes	= files,
-	.early_init	= 1,
+	.early_init	= true,
 };
 
 static inline void
